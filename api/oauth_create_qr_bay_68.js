@@ -3,7 +3,7 @@ import { check } from 'k6';
 export function oauth_create_qr_bay_68() {
     //Step 1 : OAUTH
     const url_oauth = 'https://loadtest-new-ops.inet.co.th/oauth/api/v1/oauth-token';
-    const orderId = `${__VU}${__ITER}`;
+    const orderId = `1${__VU}${__ITER}`;
     const payload_oauth = JSON.stringify({
         key: "cQkSVpaRegca85zVwUnqrLfiJE6FmfZBL3Q2VmldoCa2xzoh6l65g5qtjEwWDTuUHtJA02WO5wlVndXPu2R7wfuSK89B4iFFNGNm397P4FqTgrfa2nai2uogUahclyqWxsDZFvN8bkow4HewrKb92Z49WbZmcYL3wp7vRVgVhvo=",
         orderId: "LOADTEST-BAY-20250625" + orderId

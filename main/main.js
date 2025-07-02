@@ -9,6 +9,7 @@ import { oauth_create_bay_68 } from '../api/oauth_create_bay_68.js';
 import { oauth_create_qr_bay_68 } from '../api/oauth_create_qr_bay_68.js';
 import { oauth_create_qr_callback_bay_68 } from '../api/oauth_create_qr_callback_bay_68.js';
 import { callback_bay_68 } from '../api/callback_bay_68.js';
+import { qr_bay_68 } from '../api/qr_bay_68.js';
 
 
 //============================================================================
@@ -16,9 +17,10 @@ import { callback_bay_68 } from '../api/callback_bay_68.js';
 export default function () {    //เรียกใช้ API ใน export default function
   //response = oauth_bay_68()
   //response = oauth_create_bay_68()
-  //response = oauth_create_qr_bay_68()
+  response = oauth_create_qr_bay_68()
   //response = oauth_create_qr_callback_bay_68(scenario)
   //response = callback_bay_68(scenario)
+  //response = qr_bay_68()
   error_check(response);
   sleep(1)
 }
